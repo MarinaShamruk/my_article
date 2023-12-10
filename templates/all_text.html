@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="spisok" >
+        <h1 class="header">{{list.title}}</h1>
+<div class="li_articles">
+        <p>Категория: {{spisok[list.theme]}}</p>
+        <div class="quick">
+            {% for i in temp -%}
+            <p><font size='4' color="#0f94c1">{{i}}</font></p>
+            {%- endfor %}
+        </div>
+        <p>Опубликовано: {{list.date.date()}} {{list.date.strftime('%H:%M')}}. Разместил(а): {{list.name}}.</p>
+</div>
+  <div id="reg_control">
+    <div style="float:left;"><a href="/{{list.id}}/update" class="del_button">Корректировка</a></div>
+    <div style="float:right;">
+        <a href="/{{list.id}}/delete" class="del_button">Удаление записи</a>
+    </div>
+ </div>
+</div>
+{% endblock %}

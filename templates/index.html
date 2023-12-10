@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div style="float:left;" class="h1_spisok"><p>Список заметок.</p></div>
+
+<div style="float:right;" class="spisok" >
+<ul >
+    {% for u in list %}
+    <div class="li_articles">
+        <li ><a href="/{{u.id}}/all_text"><h1 class="header">{{u.title}}</h1></a></li>
+        <p>Категория: {{spisok[u.theme]}}</p>
+        <div class="quick"><p><font size='4' color="#0f94c1">{{u.quick}}</font></p></div>
+        <p>Опубликовано: {{u.date.date()}} {{u.date.strftime('%H:%M')}}. Разместил(а): {{u.name}}.</p>
+    </div>
+    {% endfor %}
+</ul>
+</div>
+{% endblock %}

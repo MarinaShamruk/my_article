@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div id="reg_form">
+<h1 align="center" class="h1-form">Редактирование статьи</h1>
+
+<form method="post" class="form-contact">
+<ul class="reg_list">
+    <li>
+        <div class="reg_title">Ваше имя: </div>
+        <input class="reg_input" type="text" name="name" value="{{list.name}}" requed/>
+    </li>
+    <li>
+        <div class="reg_title">Ваше имя: </div>
+        <input class="reg_input" type="text" name="theme" value="{{list.theme}}" requed/>
+    </li>
+    <li>
+       <div class="reg_title">Заголовок:</div>
+       <input class="reg_input" type="text" name="title" value="{{list.title}}" requed/>
+    </li>
+    <li>
+       <textarea name="quick" id="quick"  placeholder="Анонс">{{list.quick}}</textarea>
+    </li>
+    <li>
+       <textarea name="text" id="text" placeholder="Основной текcт">{{list.text}}</textarea>
+    </li>
+ </ul>
+
+<div id="reg_control">
+    <div style="float:left;"><input class="reg_button1" type="submit" value = "Принять"/></div>
+    <div class="reg_button1" style="float:right;">
+        <a href="/{{list.id}}/all_text" >Отменить</a>
+    </div>
+ </div>
+</form>
+</div>
+{% endblock %}

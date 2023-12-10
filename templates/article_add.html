@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div id="reg_form">
+<h1 align="center" class="h1-form">Размещение статьи</h1>
+
+<form action="/article_add" method="post" class="form-contact">
+<ul class="reg_list">
+    <li>
+        <div class="reg_title">Ваше имя: </div>
+        <input class="reg_input" type="text" name="name" value="" requed/>
+    </li>
+    <li>
+        <div class="reg_title">Категория:</div>
+            <select class="reg_select" name="theme" >
+                {% for k,v in sp.items() %}
+                <option value="{{k}}">{{v}}</option>
+                {% endfor %}
+            </select>
+    </li>
+    <li>
+       <div class="reg_title">Заголовок:</div>
+       <input class="reg_input" type="text" name="title" value="" requed/>
+    </li>
+    <li>
+       <textarea name="quick" id="quick" placeholder="Анонс"></textarea>
+    </li>
+    <li>
+       <textarea name="text" id="text" placeholder="Основной текcт"></textarea>
+    </li>
+ </ul>
+
+<div id="reg_control">
+    <div style="float:left;"><input class="reg_button1" type="submit" value = "Разместить"/></div>
+    <div style="float:right;"><input class="reg_button" type="reset" value = "Отменить"/></div>
+ </div>
+</form>
+</div>
+{% endblock %}

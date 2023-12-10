@@ -1,0 +1,199 @@
+﻿html,body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    widht: 100%;	
+}
+
+a {
+    color: #0059b2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CC0000;
+    tectdecoration: underline;
+}
+
+.clear {clear: both;}
+
+ul.mainmenu {
+     position: fixed;
+     top: 0;
+     font-family: 'Arial';
+     list-style: none;
+     background: #3F4137;
+     width: 100%;
+     height: 60px;
+     margin: 0;
+     padding: 0;
+     color: #fdc073;
+     overflow: hidden;
+}
+ul.mainmenu li {
+     float: left;
+     margin: 18px 40px 0 50px;
+}
+ul.mainmenu li.last{float: right;}
+ul.mainmenu li a {
+     color: #fdc073;
+     text-decoration: none;
+}
+ul.mainmenu ul a:hover {
+     color: #fFDA830;
+}
+div.content {
+
+    margin: 10px;
+}
+
+.h1-form {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.h2 {
+    font-size: 18px;
+    margin: 0 0 7px 0;
+    padding-bottom: 5px;
+
+}
+
+#reg_form {
+	width: 550px;
+	overflow-y: auto;
+	margin: 80px auto 60px auto;
+	padding: 15px;
+	background: #fff;
+	box-shadow: 5px 5px 10px #aaa;
+}
+.reg_list {
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+}
+.reg_list li {
+    margin: 10px;
+}
+.reg_title {
+	display: inline-block;
+	min-width: 100px;
+}
+input.reg_input {
+	width: 400px;
+	border: none;
+	border-bottom: 1.5px solid #aaa;
+	font-size:	18px;
+	}
+
+input.reg_input:focus {
+    border-bottom: 1.5px solid #d6ebb5;
+}
+#reg_control {
+    overflow: hidden;
+    width: 70%;
+    margin: 10px auto 0 auto;
+	padding: 10px;
+
+}
+.reg_button {
+    background: #FFCF11;
+    width: 120px;
+    height: 35px;
+    font-size: 19px;
+    color: #333;
+    border: 1px solid #FFCF11;
+    border-radius: 3px;
+}
+
+.reg_button1 {
+    display: block;
+    background: #FFCF11;
+    /*width: 120px;*/
+    height: 35px;
+    font-size: 20px;
+    color: #333;
+    border: 1px solid #FFCF11;
+    border-radius: 3px;
+}
+
+.del_button {
+    background: #FFF8DC;
+    font-size: 18px;
+    padding: 1.5rem 1.5rem;
+    color: #333;
+    border: 1px solid #FFCF11;
+    border-radius: 3px;
+}
+.reg_select {
+    width: 400px;
+    font-size: 18px;
+    background: #e1f5da;
+}
+.btn {
+    display: inline-block;
+    background: #FFDB4D;
+    color: #333;
+    padding: 1rem 1.5rem;
+    border: 1px solid #FFCF11;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#text {
+    wrap: on;
+    background: #e1f5da; /* Цвет фона */
+    border: 2px solid #a9c358; /* Параметры рамки */
+    padding: 10px; /* Поля */
+    width: 100%; /* Ширина */
+    height: 200px; /* Высота */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 18px; /* Размер шрифта */
+}
+#quick {
+    background: #e1f5da; /* Цвет фона */
+    border: 2px solid #a9c358; /* Параметры рамки */
+    color: black;
+    padding: 10px; /* Поля */
+    overflow-y: auto;
+    width: 100%; /* Ширина */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 18px; /* Размер шрифта */
+   }
+
+ :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.spisok {
+    width: 70%;
+    min-height: 100vh;
+	margin: 40px auto 0 auto;
+	padding: 20px 20px 120px 20px;
+	background: white;
+	box-shadow: 5px 5px 10px #aaa;
+
+}
+
+.li_articles {
+    width: 70%;
+    overflow_y: auto;
+    background: #e1f5da;
+    margin: 20px auto 0 auto;
+	padding: 20px;
+
+}
+.h1_spisok {
+    position: fixed;
+    font-size: 30px;
+    top: 100px;
+    color: black;
+    width: 20%;
+    margin: 40px 20px 0 10px;
+    padding: 20px;
+}
+
+
